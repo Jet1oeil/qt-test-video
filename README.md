@@ -1,13 +1,16 @@
 # qt-test-video
-Program de test pour fuite mémoire Buster + XOrg
+Program that reproduce the memory leak problem of XOrg on Debian Buster with Qt 5.11.3.
 
-apt install git make cmake g++ qtbase5-dev 
+Install dependencies :
+> apt install git make cmake g++ qtbase5-dev 
 
-git clone https://github.com/Jet1oeil/qt-test-video.git
-cd qt-test-video
-mkdir build && cd build
-cmake ../
-make
+Build the project :
+> git clone https://github.com/Jet1oeil/qt-test-video.git
+> cd qt-test-video
+> mkdir build && cd build
+> cmake ../
+> make
 
-./TestVideo [IMAGE_DIR] [INTERVAL_MS]
-./TestVideo ./image 30
+Usage :
+> ./TestVideo [IMAGE_DIR] [INTERVAL_MS]
+> ./TestVideo ./image 30

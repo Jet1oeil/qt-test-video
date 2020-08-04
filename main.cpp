@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    QString szDir = "/home/ebeuque/Informatique/Devel/clion-workspace/qt-test-video/images";
+    QString szDir = "./images";
     QString szIntervalMs = "30";
 
     if(argc > 1){
